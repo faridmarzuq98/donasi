@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.conf.urls import url, include
-from donasi.views import index, about
+from donasi.views import *
 
 from django.conf import settings
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
@@ -22,7 +22,13 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     url(r'^$', index, name = 'home'), #root
-    url(r'^about', about, name = 'about'),
+    url(r'^about/', about, name = 'about'),
+    url(r'^campaign/', campaign, name = 'campaign'),
+    url(r'^contact/', contact, name = 'contact'),
+    url(r'^elements/', elements, name = 'elements'),
+    url(r'^campaign_list/', campaign_list, name = 'campaign_list'),
+    url(r'^portfolio/', portfolio, name = 'portfolio'),
+    url(r'^single-causes/', single_causes, name = 'single-causes'),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
