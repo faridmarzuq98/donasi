@@ -754,7 +754,7 @@ ul.tabs-nav .tab-nav.active {
 --------------------------------*/
 .home-page-welcome {
     position: relative;
-    padding: 96px 0;
+    padding: 94px;
     background: url("images/welcome-bg.jpg") no-repeat center;
     background-size: cover;
     z-index: 99;

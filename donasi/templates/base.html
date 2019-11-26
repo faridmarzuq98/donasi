@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>HelpEm!PB - Dari mahasiswa, oleh mahasiswa, untuk mahasiswa!</title>
+    <title>HelpEm - Dari mahasiswa, oleh mahasiswa, untuk mahasiswa!</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -31,28 +31,6 @@
 </head>
 <body>
     <header class="site-header">
-        <div class="top-header-bar">
-            <div class="container">
-                <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-lg-center">
-                    <div class="col-12 col-lg-8 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
-                        <div class="header-bar-email">
-                            Surel: <a href="mailto: UtamaBanggaInc@business.google.com">UtamaBanggaInc@business.google.com</a>
-                        </div><!-- .header-bar-email -->
-
-                        <div class="header-bar-text">
-                            <p>Telpon: <span>+62 826 262 2626</span></p>
-                        </div><!-- .header-bar-text -->
-                    </div><!-- .col -->
-
-                    <div class="col-12 col-lg-4 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
-                        <div class="donate-btn">
-                            <a href="#">Donate Now</a>
-                        </div><!-- .donate-btn -->
-                    </div><!-- .col -->
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </div><!-- .top-header-bar -->
-
         <div class="nav-bar">
             <div class="container">
                 <div class="row">
@@ -63,11 +41,10 @@
 
                         <nav class="site-navigation d-flex justify-content-end align-items-center">
                             <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-content-center">
-                                <li class="current-menu-item"><a href="index.html">Home</a></li>
-                                <li><a href="{% url 'about' %}">About us</a></li>
+                                <li class="current-menu-item"><a href="{% url 'home' %}">Beranda</a></li>
+                                <li><a href="{% url 'about' %}">Tentang kami</a></li>
                                 <li><a href="{% url 'campaign' %}">Campaign</a></li>
                                 <li><a href="{% url 'portfolio' %}">Gallery</a></li>
-                                <li><a href="{% url 'campaign_list' %}">Daftar Campaign</a></li>
                                 <li><a href="{% url 'contact' %}">Contact</a></li>
                             </ul>
                         </nav><!-- .site-navigation -->
