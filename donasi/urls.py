@@ -31,18 +31,12 @@ urlpatterns = [
     url(r'^single-causes/$', single_causes, name = 'single-causes'),
     url(r'^profile/$', profile, name = 'profile'),
 
-    #Admin side
-<<<<<<< HEAD
     url(r'^adm/$', adm, name = 'adm'),
     url(r'^adm/error$', error, name = 'adm/error'),
     url(r'^adm/material$', material, name = 'adm/material'),
     url(r'^adm/profile$', profile, name = 'adm/profile'),
     url(r'^adm/starter$', starter, name = 'adm/starter'),
     url(r'^adm/table$', table, name = 'adm/table'),
-
-=======
-    url(r'^adm/', adm, name = 'adm'),
->>>>>>> 42d7677ae8322d9d82841e18003e7937f7236d57
 ]
 
 urlpatterns += staticfiles_urlpatterns()

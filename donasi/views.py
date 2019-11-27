@@ -43,7 +43,6 @@ def profile(request):
 #Admin side
 def adm(request):
     return render_to_response('adm/index.html')
-<<<<<<< HEAD
 
 def error(request):
     return render_to_response('adm/error-404.html')
@@ -59,5 +58,3 @@ def starter(request):
 
 def table(request):
     return render_to_response('adm/table-basic.html')
-=======
->>>>>>> 42d7677ae8322d9d82841e18003e7937f7236d57
