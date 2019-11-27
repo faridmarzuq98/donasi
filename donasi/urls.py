@@ -26,12 +26,21 @@ urlpatterns = [
     url(r'^$', index, name = 'home'), #root
     url(r'^about/$', about, name = 'about'),
     url(r'^campaign/$', campaign, name = 'campaign'),
+
+    # path('edit/<int:pk>', campaign_update, name='campaign_edit'),
+    # path('delete/<int:pk>', campaign_delete, name='campaign_delete'),
+
     url(r'^contact/$', contact, name = 'contact'),
     url(r'^elements/$', elements, name = 'elements'),
     url(r'^campaign_list/$', campaign_list, name = 'campaign_list'),
     #url(r'^portfolio/', portfolio, name = 'portfolio'),
     url(r'^single-causes/$', single_causes, name = 'single-causes'),
     url(r'^profile/$', profile, name = 'profile'),
+
+    url(r'^register/$', register, name='register'),
+    url(r'^success/$', success, name='success'),
+    url(r'^login/$', login, name='login'),
+    url(r'^logout/$', logout, name='logout'),
 
     path('admin/', admin.site.urls),
 
