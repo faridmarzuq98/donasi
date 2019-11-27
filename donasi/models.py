@@ -42,6 +42,9 @@ class User(models.Model):
 	password = models.CharField(max_length=255)
 	created_at = models.DateTimeField(auto_now_add = True)
 	updated_at = models.DateTimeField(auto_now = True)
+	logged_in = models.BooleanField(default=False)
+	phone = models.CharField(max_length=255,default="")
+	address = models.TextField(default="")
 	objects = UserManager()
 
 # c = Campaign(
