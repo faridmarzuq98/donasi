@@ -29,8 +29,14 @@ def contact(request):
 def elements(request):
     return render(request, 'usr/elements.html')
 
-def campaign_list(request):
-    return render(request, 'usr/campaign_list.html', {'nbar': 'campaign'})
+def campaign_list(request, template_name='usr/campaign_list.html'):
+    campaign = Campaign.objects.all()
+    data = {}
+    data['campaigns'] = campaign
+    return render(request, template_name, data)
+
+# def campaign_list(request):
+#     return render(request, 'usr/campaign_list.html', {'nbar': 'campaign'})
 
 def portfolio(request):
     return render(request, 'usr/portfolio.html')
@@ -59,3 +65,5 @@ def starter(request):
 
 def table(request):
     return render(request, 'adm/table-basic.html')
+
+
