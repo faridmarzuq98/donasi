@@ -632,11 +632,13 @@ ul.tabs-nav .tab-nav.active {
 # Icon Box
 ----------------------------------*/
 .icon-box {
-    padding: 40px;
+    padding: 50px;
     border-radius: 24px;
     background: #ecf2f5;
     text-align: center;
     transition: all .35s;
+    min-height: 320px;
+    max-height: 320px;
 }
 
 .icon-box:hover,
