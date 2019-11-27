@@ -42,7 +42,7 @@ def portfolio(request):
     return render(request, 'usr/portfolio.html')
 
 def single_causes(request):
-    return render(request, 'usr/single-causes.html')
+    return render(request, 'usr/single-causes.html', {'nbar': 'campaign'})
 
 def profile(request):
     return render(request, 'usr/profile.html', {'nbar': 'profile'})
