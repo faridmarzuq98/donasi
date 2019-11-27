@@ -42,9 +42,12 @@ def single_causes(request):
     return render(request, 'usr/single-causes.html', {'nbar': 'campaign'})
 
 def profile(request):
-    user = User.objects.all()
-    data = {'user': user}
-    return render(request, 'usr/profile.html', data)
+    try:
+        user = User.objects.filter(id=request.session['id'])[0]
+        data = {'user': user}
+        return render(request, 'usr/profile.html', data)
+    except:
+        return render(request, 'auth/login.html')
 
 #Admin side
 def adm(request):
@@ -88,6 +91,7 @@ def login(request):
             user = User.objects.filter(email=request.POST['login_email'])[0]
             if (bcrypt.checkpw(request.POST['login_password'].encode(), user.password.encode())):
                 request.session['id'] = user.id
+                user.logged_in = True
                 return redirect('/')
         return redirect('/')
 
@@ -100,4 +104,6 @@ def success(request):
 
 def logout(request):
     request.session['id'] = ''
+    u = User.objects.filter(email=request.POST['login_email'])[0]
+    u.logged_in = False
     return redirect('/login')
