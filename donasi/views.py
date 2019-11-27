@@ -27,6 +27,24 @@ def portfolio(request):
 def single_causes(request):
     return render_to_response('usr/single-causes.html')
 
+def profile(request):
+    return render_to_response('usr/profile.html')
+
 #Admin side
 def adm(request):
     return render_to_response('adm/index.html')
+
+def error(request):
+    return render_to_response('adm/error-404.html')
+
+def material(request):
+    return render_to_response('adm/icon-material.html')
+
+#def profile(request):
+#    return render_to_response('adm/pages-profile.html')
+
+def starter(request):
+    return render_to_response('adm/starter-kit.html')
+
+def table(request):
+    return render_to_response('adm/table-basic.html')

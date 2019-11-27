@@ -22,16 +22,23 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     url(r'^$', index, name = 'home'), #root
-    url(r'^about/', about, name = 'about'),
-    url(r'^campaign/', campaign, name = 'campaign'),
-    url(r'^contact/', contact, name = 'contact'),
-    url(r'^elements/', elements, name = 'elements'),
-    url(r'^campaign_list/', campaign_list, name = 'campaign_list'),
+    url(r'^about/$', about, name = 'about'),
+    url(r'^campaign/$', campaign, name = 'campaign'),
+    url(r'^contact/$', contact, name = 'contact'),
+    url(r'^elements/$', elements, name = 'elements'),
+    url(r'^campaign_list/$', campaign_list, name = 'campaign_list'),
     #url(r'^portfolio/', portfolio, name = 'portfolio'),
-    url(r'^single-causes/', single_causes, name = 'single-causes'),
+    url(r'^single-causes/$', single_causes, name = 'single-causes'),
+    url(r'^profile/$', profile, name = 'profile'),
 
     #Admin side
-    url(r'^adm', adm, name = 'adm'),
+    url(r'^adm/$', adm, name = 'adm'),
+    url(r'^adm/error$', error, name = 'adm/error'),
+    url(r'^adm/material$', material, name = 'adm/material'),
+    url(r'^adm/profile$', profile, name = 'adm/profile'),
+    url(r'^adm/starter$', starter, name = 'adm/starter'),
+    url(r'^adm/table$', table, name = 'adm/table'),
+
 ]
 
 urlpatterns += staticfiles_urlpatterns()

@@ -11,6 +11,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{% static 'bootstrap_1/css/bootstrap.min.css' %}">
 
@@ -28,6 +34,11 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="{% static 'bootstrap_1/style.css' %}">
+
+    <!-- Custom CSS -->
+    <link href="{% static 'bootstrap_2/assets/libs/chartist/dist/chartist.min.css' %}" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="{% static 'bootstrap_2/dist/css/style.min.css' %}" rel="stylesheet">
 </head>
 <body>
     <header class="site-header">
@@ -45,6 +56,7 @@
                                 <li><a href="{% url 'campaign' %}">Campaign</a></li>
                                 <li><a href="{% url 'about' %}">Tentang kami</a></li>
                                 <li><a href="{% url 'contact' %}">Contact</a></li>
+                                <li><a href="{% url 'adm/profile' %}">Profile</a></li>
                             </ul>
                         </nav><!-- .site-navigation -->
 
