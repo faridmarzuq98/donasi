@@ -13,9 +13,14 @@
 <div class="page-header">
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-6">
                 <h1>Campaign</h1>
             </div><!-- .col -->
+            <div class="col-6">
+                <div class="text-right upgrade-btn">
+                    <a href="{% url 'campaign_list' %}" class="btn gradient-bg mr-2">Lihat selengkapnya</a>
+                </div>
+            </div>            
         </div><!-- .row -->
     </div><!-- .container -->
 </div><!-- .page-header -->
@@ -272,6 +277,7 @@
         </div><!-- .row -->
     </div><!-- .container -->
 </div><!-- .highlighted-cause -->
+
 
 
 {% endblock content %}
