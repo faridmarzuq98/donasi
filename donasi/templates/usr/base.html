@@ -49,17 +49,15 @@
                         <div class="site-branding d-flex align-items-center">
                            <a class="d-block" href="{% url 'home' %}" rel="home"><img class="d-block" src="{% static 'bootstrap_1/images/logo.png' %}" alt="logo"></a>
                         </div><!-- .site-branding -->
-
                         <nav class="site-navigation d-flex justify-content-end align-items-center">
                             <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-content-center">
-                                <li class="current-menu-item"><a href="{% url 'home' %}">Beranda</a></li>
-                                <li><a href="{% url 'campaign' %}">Campaign</a></li>
-                                <li><a href="{% url 'about' %}">Tentang kami</a></li>
-                                <li><a href="{% url 'contact' %}">Kontak kami</a></li>
-                                <li><a href="{% url 'adm/profile' %}">Profile</a></li>
+                                <li {% if nbar == 'home' %} class="current-menu-item" {% endif %}><a href="{% url 'home' %}">Beranda</a></li>
+                                <li {% if nbar == 'campaign' %} class="current-menu-item" {% endif %}><a href="{% url 'campaign' %}">Campaign</a></li>
+                                <li {% if nbar == 'about' %} class="current-menu-item" {% endif %}><a href="{% url 'about' %}">Tentang kami</a></li>                               
+                                <li {% if nbar == 'contact' %} class="current-menu-item" {% endif %}><a href="{% url 'contact' %}">Kontak kami</a></li>
+                                <li {% if nbar == 'profile' %} class="current-menu-item" {% endif %}><a href="{% url 'profile' %}">Profil</a></li>
                             </ul>
                         </nav><!-- .site-navigation -->
-
                         <div class="hamburger-menu d-lg-none">
                             <span></span>
                             <span></span>
