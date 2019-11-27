@@ -1,0 +1,133 @@
+{% extends "usr/base.html" %}
+
+{% block content %}
+
+{% load static %}
+
+    <div class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="entry-header">Tentang kami</h1>
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .page-header -->
+
+    <div class="welcome-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 order-2 order-lg-1">
+                    <div class="welcome-content">
+                        <header class="entry-header">
+                            <h2 class="entry-title"></h2>
+                        </header><!-- .entry-header -->
+
+                        <div class="entry-content mt-5">
+                            <p><strong>Utama Bangga Inc.</strong> adalah sebuah start-up yang didirikan oleh tiga putra negeri ini yang memiliki semangat dalam melakukan pergerakan perubahan terhadap kemajuan industri teknologi di Indonesia.</br></br>
+                                <strong>Utama Bangga Inc.</strong> didirikan oleh Ivan Mahinza, Muhammad Farid Marzuq, dan Zaki Geyan pada Agustus 2019.</p>
+                        </div><!-- .entry-content -->
+
+                    </div><!-- .welcome-content -->
+                </div><!-- .col -->
+
+                <div class="col-12 col-lg-6 order-1 order-lg-2">
+                    <img src="{% static 'bootstrap_1/images/welcome.jpg' %}" alt="welcome" style="width:659px;">
+                </div><!-- .col -->
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .home-page-icon-boxes -->
+
+    <div class="about-stats">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="circular-progress-bar">
+                        <div class="circle" id="loader_1">
+                            <strong class="d-flex justify-content-center"></strong>
+                        </div>
+
+                        <h3 class="entry-title">Hard Work</h3>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="circular-progress-bar">
+                        <div class="circle" id="loader_2">
+                            <strong class="d-flex justify-content-center"></strong>
+                        </div>
+
+                        <h3 class="entry-title">Pure Love</h3>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="circular-progress-bar">
+                        <div class="circle" id="loader_3">
+                            <strong class="d-flex justify-content-center"></strong>
+                        </div>
+
+                        <h3 class="entry-title">Smart Ideas</h3>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <div class="circular-progress-bar">
+                        <div class="circle" id="loader_4">
+                            <strong class="d-flex justify-content-center"></strong>
+                        </div>
+
+                        <h3 class="entry-title">Good Decisions</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-5">
+                    <div class="testimonial-cont">
+                        <div class="entry-content">
+                            <p>Meskipun saya belum pernah bertemu dengan Tim Utama Bangga, saya yakin karya-karyanya dapat bermanfaat bagi IPB.</p>
+                        </div>
+
+                        <div class="entry-footer d-flex flex-wrap align-items-center mt-5">
+                            <img src="{% static 'bootstrap_1/images/testimonial-1.jpg' %}" alt="">
+
+                            <h4>Alim Setiawan Slamet, <span>DirmawaPK IPB</span></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 offset-lg-2 col-lg-5">
+                    <div class="testimonial-cont">
+                        <div class="entry-content">
+                            <p>Tim Utama Bangga telah membantu mahasiswa IPB melakukan crowd-funding untuk membantu sesama mahasiswa.</p>
+                        </div>
+
+                        <div class="entry-footer d-flex flex-wrap align-items-center mt-5">
+                            <img src="{% static 'bootstrap_1/images/testimonial-2.jpg' %}" alt="">
+
+                            <h4>Agus Buono, <span>Kadept Ilmu Komputer FMIPA IPB</span></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="help-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+                    <h2>Bantu untuk mewujudkan mimpi kami!</h2>
+
+                    <a class="btn orange-border" href="{% url 'campaign' %}">Mulai donasi</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

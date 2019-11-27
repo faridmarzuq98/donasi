@@ -27,8 +27,11 @@ urlpatterns = [
     url(r'^contact/', contact, name = 'contact'),
     url(r'^elements/', elements, name = 'elements'),
     url(r'^campaign_list/', campaign_list, name = 'campaign_list'),
-    url(r'^portfolio/', portfolio, name = 'portfolio'),
+    #url(r'^portfolio/', portfolio, name = 'portfolio'),
     url(r'^single-causes/', single_causes, name = 'single-causes'),
+
+    #Admin side
+    url(r'^adm', adm, name = 'adm'),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
