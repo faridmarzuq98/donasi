@@ -46,9 +46,6 @@
                         </div><!-- .fund-raised-details -->
                     </div><!-- .fund-raised -->
 
-                    <div class="entry-footer mt-5">
-                        <a href="#" class="btn gradient-bg">Donate Now</a>
-                    </div><!-- .entry-footer -->
                 </div><!-- .col -->
 
                 <div class="col-12 col-lg-5 order-1 order-lg-2">
@@ -129,62 +126,52 @@
                             </label>
                         </div>
 
-                        <div class="payment-type d-flex flex-wrap align-items-center">
-                            <h4 class="w-100 mt-5">Payment Type</h4>
-
-                            <label class="d-flex align-items-center mt-4">
-                                <input type="radio" name="payment_type" value="One time" />
-                                <span class="payment-type-radio"></span>
-                                <span class="centered-dot"></span>
-
-                                One time
-                            </label>
-
-                            <label class="d-flex align-items-center mt-4">
-                                <input type="radio" name="payment_type" value="Recurring" checked="checked" />
-                                <span class="payment-type-radio"></span>
-                                <span class="centered-dot"></span>
-
-                                Recurring
-                            </label>
-                        </div>
-
                         <div class="billing-information  d-flex flex-wrap justify-content-between align-items-center">
-                            <h4 class="w-100 mt-5 mb-3">Billing Information</h4>
+                            <h4 class="w-100 mt-5 mb-3">Informasi Rekening</h4>
 
-                            <input type="text" placeholder="Name">
-                            <input type="email" placeholder="E-mail">
-                            <input type="text" placeholder="Address">
-                            <input type="text" placeholder="City">
-                            <input type="number" placeholder="Postcode">
-                            <input type="text" placeholder="Country">
+                            <input type="text" placeholder="Atas Nama Rekening">
+                            <input type="text" placeholder="Bank">
+                            <input type="text" placeholder="Nomor Rekening">
+                            <input type="text" placeholder="Nomor Telepon">
                         </div>
 
-                        <div class="payment-type d-flex flex-wrap align-items-center">
-                            <h4 class="w-100 mt-5">Payment Method</h4>
 
-                            <label class="d-flex align-items-center mt-4">
-                                <input type="radio" name="payment_method" value="Credit Card" />
-                                <span class="payment-type-radio"></span>
-                                <span class="centered-dot"></span>
-
-                                Credit Card
-                            </label>
-
-                            <label class="d-flex align-items-center mt-4">
-                                <input type="radio" name="payment_method" value="PayPal" checked="checked" />
-                                <span class="payment-type-radio"></span>
-                                <span class="centered-dot"></span>
-
-                                PayPal
-                            </label>
-                        </div>
-
-                        <input class="btn gradient-bg mt-5" type="submit" value="Donate Now">
+                        <input class="btn gradient-bg mt-5" type="submit" value="Donasikan sekarang">
                     </form>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="donation-form-wrap">
+                    <h2>Unggah bukti transfer</h2>
+
+                    <h4 class="mt-5">Transfer donasi sebesar Rp10.000 ke rekening:</h4>
+
+                    <div class="section-heading" align="center">
+                        <h1 class="donate-amount">034 101 000 743 300</h1>
+                        <h3>a.n. Yayasan HelpEm IPB</h3>
+                        <h2>Bank Rakyat Indonesia</h2>
+                    </div><!-- .section-heading -->
+
+
+                        <div class="billing-information  d-flex flex-wrap justify-content-between align-items-center">
+                            <h4 class="w-100 mt-5 mb-3">Bukti transfer</h4>
+
+                            <input  type="file" id="fileinput" multiple="multiple" accept="image/*" />
+
+                        </div>
+
+
+                        <input class="btn gradient-bg mt-5" type="submit" value="Unggah">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 {% endblock content %}
