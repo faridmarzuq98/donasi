@@ -17,9 +17,11 @@ def campaign(request):
 
 # @login_required
 def campaign(request, template_name='usr/campaign.html'):
-    campaign = Campaign.objects.all()
+    terbaru = Campaign.objects.order_by('-pub_date')[:4]
+    sedikit_lagi = Campaign.objects.order_by('-raised')[:3]
     data = {}
-    data['campaigns'] = campaign
+    data['campaign_terbaru'] = terbaru
+    data['campaign_sedikit_lagi'] = sedikit_lagi
     return render(request, template_name, data)
 
 def contact(request):
