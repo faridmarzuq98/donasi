@@ -7,9 +7,10 @@ class Campaign(models.Model):
 	title = models.CharField(max_length=200)
 	description = models.TextField()
 	image = models.ImageField()
-	target_duit_donasi = models.IntegerField()
-	total_duit_donasi = models.IntegerField()
-	total_orang_donasi = models.IntegerField()
+	goal = models.IntegerField()
+	raised = models.IntegerField(default=0)
+	total = models.IntegerField(default=0)
+	status = models.BooleanField(default=False)
 	pub_date = models.DateTimeField('date published')
 
 	def __str__(self):
