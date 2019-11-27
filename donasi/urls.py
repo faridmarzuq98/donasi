@@ -31,7 +31,7 @@ urlpatterns = [
     url(r'^single-causes/', single_causes, name = 'single-causes'),
 
     #Admin side
-    url(r'^adm', adm, name = 'adm'),
+    url(r'^adm/', adm, name = 'adm'),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
