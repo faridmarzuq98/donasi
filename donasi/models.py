@@ -14,3 +14,12 @@ class Campaign(models.Model):
 
 	def __str__(self):
 		return self.title
+
+# c = Campaign(
+# 	title='ini judul ke-4',
+# 	description='ini deskripsinya yg ke-4 yang sangat panjaaang panjaaang panjaaang panjaaang panjaaang panjaaang panjaaang panjaaang.',
+# 	target_duit_donasi=1050,
+# 	total_duit_donasi=300,
+# 	total_orang_donasi=15,
+# 	pub_date=timezone.now()
+# )
